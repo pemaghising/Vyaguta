@@ -1058,6 +1058,7 @@ table.overview-data-table tbody tr:last-child {
 .worklog-header {
     background-color: #ffffff;
     border-bottom: 1px solid #e6e6e6;
+
     align-items: center;
     justify-content: space-between;
     padding: 22px;
@@ -1087,9 +1088,9 @@ table.overview-data-table tbody tr:last-child {
 .worklog-current-date {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 11px;
     color: #333333;
-    line-height: 1.31;
+    line-height: 1.8;
     padding-left: 28px;
 }
 
@@ -1102,11 +1103,26 @@ table.overview-data-table tbody tr:last-child {
 .form-column-titles {
     background-color: #ffffff;
     border-bottom: 1px solid #e6e6e6;
-    display: grid;
-    grid-template-columns: 314px 244px 420px 140px;
+    display: flex;
     align-items: center;
     padding: 14px 22px;
     height: 48px;
+}
+
+.form-column-titles .project-header {
+    width: 314px;
+}
+
+.form-column-titles .task-header {
+    width: 244px;
+}
+
+.form-column-titles .log-header {
+    width: 420px;
+}
+
+.form-column-titles .time-column-title {
+    width: 140px;
 }
 
 .form-column-title {
@@ -1140,8 +1156,7 @@ table.overview-data-table tbody tr:last-child {
 }
 
 .form-entry-row {
-    display: grid;
-    grid-template-columns: 288px 220px 396px 158px;
+    display: flex;
     gap: 24px;
     align-items: flex-start;
     min-height: 58px;

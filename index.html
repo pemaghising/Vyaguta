@@ -3,51 +3,559 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vyaguta Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Vyaguta Homepage Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
-
-    <header class="main-header">
-        <div class="container">
-            <div class="header-left">
-                <div class="logo">
-                    <img src="img/vyaguta logo.svg" alt="Vyaguta Logo">
+    <div class="primary-header-container">
+        <div class="header-content">
+            <div class="header-start">
+                <div class="site-logo">
+                    <!-- Add image here -->
+                    <img src="/img/vyaguta logo.svg" alt="Vyaguta Logo">
                 </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Teams</a></li>
-                        <li><a href="#">Attendance</a></li>
-                        <li><a href="#">JUMP</a></li>
-                        <li><a href="#">Honor</a></li>
-                        <li><a href="#">OKR</a></li>
+                <nav class="main-navigation">
+                    <ul class="navigation-links">
+                        <li class="navigation-link-item"><a href="#people">People</a></li>
+                        <li class="navigation-link-item"><a href="#teams">Teams</a></li>
+                        <li class="navigation-link-item"><a href="#attendance">Attendance</a></li>
+                        <li class="navigation-link-item"><a href="#jump">JUMP</a></li>
+                        <li class="navigation-link-item"><a href="#honor">Honor</a></li>
+                        <li class="navigation-link-item"><a href="#okr">OKR</a></li>
                     </ul>
                 </nav>
             </div>
-
-            <div class="header-right">
-                <a href="#" class="icon-btn-circle">
+            <div class="header-end">
+                <a href="#" class="action-button-circular">
                     <img src="/img/message.svg" alt="Edit Icon">
                 </a>
-                <a href="#" class="icon-btn">
+                <a href="#" class="action-button">
+            
                     <img src="/img/link.svg" alt="Link Icon">
                 </a>
-                <a href="#" class="icon-btn notification">
+                <a href="#" class="action-button notification-indicator">
                     <img src="/img/speaker.svg" alt="Notification Icon">
-                    <span class="badge">4</span>
+                    <span class="notification-badge">4</span>
                 </a>
-                <div class="user-profile">
+                <div class="user-menu">
                     <img src="/img/pp photo.png" alt="User Profile Picture">
                     <span>Pratik Shrestha</span>
-                    <img src="/img/dropdown.svg" alt="Dropdown Icon" class="chevron-icon">
+                    <img src="/img/dropdown.svg" alt="Dropdown Icon" class="dropdown-arrow">
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
-    <main class="content-area">
+    <main class="page-content">
+        <section class="dashboard-layout">
+            <article class="my-allocation-module">
+                <header class="module-top-bar">
+                    <h2 class="module-heading">My Allocation</h2>
+                    <div class="toggle-switch">
+                        <button class="toggle-option active">Current</button>
+                        <button class="toggle-option">Booking</button>
+                    </div>
+                </header>
+                <div class="module-main-content">
+                    <div class="chart-container">
+
+                        <img src="/img/Pie chart.svg" alt="Pie Chart">
+                        <div class="chart-inner-text">
+                            <span class="chart-value">40</span>
+                            <span class="chart-label">hrs/week</span>
+                        </div>
+                    </div>
+                    <div class="assignment-list">
+                        <div class="assignment-entry">
+                            <div class="assignment-color-dot dot-color-green"></div>
+                            <div class="assignment-info">
+                                <h3 class="assignment-title">Vyaguta</h3>
+                                <p class="assignment-timeline">
+                                    <span class="timeline-label">Start date:</span>
+                                    <span class="timeline-date">Oct 24, 2019</span>
+                                </p>
+                                <p class="assignment-timeline">
+                                    <span class="timeline-label">Potential end date:</span>
+                                    <span class="timeline-date">Mar 24, 2024</span>
+                                </p>
+                                <p class="assignment-role">
+                                    Senior Product Designer · <strong>20 hrs/week</strong> · Learning
+                                </p>
+                                <div class="supervisor-section">
+                                    <span class="supervisor-label">Appraisers:</span>
+                                    <div class="supervisor-avatar-group">
+                                        <img src="/img/pp photo.png" alt="Appraiser 1" class="supervisor-avatar-img">
+                                        <img src="/img/pp photo.png" alt="Appraiser 2" class="supervisor-avatar-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="assignment-entry">
+                            <div class="assignment-color-dot dot-color-blue"></div>
+                            <div class="assignment-info">
+                                <h3 class="assignment-title">Delphi: Automated Synthesis</h3>
+                                <p class="assignment-timeline">
+                                    <span class="timeline-label">Start date:</span>
+                                    <span class="timeline-date">Oct 24, 2019</span>
+                                </p>
+                                <p class="assignment-timeline">
+                                    <span class="timeline-label">End date:</span>
+                                    <span class="timeline-date">Feb 21, 2024</span>
+                                </p>
+                                <p class="assignment-role">
+                                    Team Lead · <strong>20 hrs/week</strong>
+                                </p>
+                                <div class="supervisor-section">
+                                    <span class="supervisor-label">Appraisers:</span>
+                                    <div class="supervisor-avatar-group">
+                                        <img src="/img/pp photo.png" alt="Appraiser 1" class="supervisor-avatar-img">
+                                        <img src="/img/pp photo.png" alt="Appraiser 2" class="supervisor-avatar-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="key-metrics-section">
+                    <div class="metric-item">
+                        <span class="metric-value">38h 30m</span>
+                        <span class="metric-label">Logged this week</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value color-orange">24</span>
+                        <span class="metric-label">Worklogs pending</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value color-red">214</span>
+                        <span class="metric-label">Attendance Missed</span>
+                    </div>
+                </div>
+                <div class="check-in-summary">
+                    <div class="summary-top">
+                        <p class="summary-heading">Last 30 days history of your attendance</p>
+                        <a href="#" class="history-link">View history</a>
+                    </div>
+                    <div class="summary-main">
+                        <div class="work-location-status">
+                            <div class="work-location-icon-wrapper">
+                                <img src="/img/building.svg" alt="Building Icon">
+                            </div>
+                            <div class="work-location-info">
+                                <p class="work-location-time">WFO <strong>9:15 am</strong></p>
+                                <p class="average-time-note">median clock-in time</p>
+                            </div>
+                        </div>
+                        <div class="check-in-breakdown">
+                            <div class="breakdown-divider"></div>
+                            <div class="breakdown-item">
+                                <span class="breakdown-value">10</span>
+                                <span class="breakdown-label">Remote</span>
+                            </div>
+                            <div class="breakdown-divider"></div>
+                            <div class="breakdown-item">
+                                <span class="breakdown-value">5</span>
+                                <span class="breakdown-label">WFO</span>
+                            </div>
+                            <div class="breakdown-divider"></div>
+                            <div class="breakdown-item">
+                                <span class="breakdown-value">2</span>
+                                <span class="breakdown-label">Leaves</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="grid-item events-schedule-widget">
+                <header class="widget-top-bar">
+                    <h2 class="widget-heading">Upcoming Events & Holidays</h2>
+                </header>
+                <div class="schedule-list">
+                    <div class="schedule-entry">
+                        <div class="schedule-date-info">
+                            <span class="date-day-abbr">Wed</span>
+                            <span class="date-day-num">08</span>
+                            <span class="date-month-abbr">Jun</span>
+                        </div>
+                        <div class="schedule-divider"></div>
+                        <div class="schedule-description">
+                            <h3 class="schedule-heading">Talking to the Developers from Google</h3>
+                            <span class="schedule-label label-type-green">Event</span>
+                        </div>
+                    </div>
+                    <div class="schedule-entry">
+                        <div class="schedule-date-info">
+                            <span class="date-day-abbr">Thu</span>
+                            <span class="date-day-num">09</span>
+                            <span class="date-month-abbr">Jun</span>
+                        </div>
+                        <div class="schedule-divider"></div>
+                        <div class="schedule-description">
+                            <h3 class="schedule-heading">Leaptalk</h3>
+                            <span class="schedule-label label-type-blue">Event</span>
+                        </div>
+                    </div>
+                    <div class="schedule-entry">
+                        <div class="schedule-date-info">
+                            <span class="date-day-abbr">Fri</span>
+                            <span class="date-day-num">10</span>
+                            <span class="date-month-abbr">Jun</span>
+                        </div>
+                        <div class="schedule-divider"></div>
+                        <div class="schedule-description">
+                            <h3 class="schedule-heading">Maha Shivaratiri</h3>
+                            <span class="schedule-label label-type-gray">Holiday</span>
+                        </div>
+                    </div>
+                    <div class="schedule-entry">
+                        <div class="schedule-date-info">
+                            <span class="date-day-abbr">Mon</span>
+                            <span class="date-day-num">13</span>
+                            <span class="date-month-abbr">Jun</span>
+                        </div>
+                        <div class="schedule-divider"></div>
+                        <div class="schedule-description">
+                            <h3 class="schedule-heading">Design Disco</h3>
+                            <span class="schedule-label label-type-blue">Event</span>
+                        </div>
+                    </div>
+                    <div class="schedule-entry">
+                        <div class="schedule-date-info">
+                            <span class="date-day-abbr">Mon</span>
+                            <span class="date-day-num">01</span>
+                            <span class="date-month-abbr">May</span>
+                        </div>
+                        <div class="schedule-divider"></div>
+                        <div class="schedule-description">
+                            <h3 class="schedule-heading">International Labor Day</h3>
+                            <span class="schedule-label label-type-blue">Event</span>
+                        </div>
+                    </div>
+                    <div class="schedule-entry">
+                        <div class="schedule-date-info">
+                            <span class="date-day-abbr">Mon</span>
+                            <span class="date-day-num">01</span>
+                            <span class="date-month-abbr">May</span>
+                        </div>
+                        <div class="schedule-divider"></div>
+                        <div class="schedule-description">
+                            <h3 class="schedule-heading">International Labor Day</h3>
+                            <span class="schedule-label label-type-blue">Event</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="grid-item announcement-panel">
+                <header class="panel-top-bar">
+                    <div class="panel-heading-group">
+                        <div class="announcement-icon-wrapper">
+                            <img src="img/alert.svg" alt="Announcement Icon">
+                        </div>
+                        <h2 class="panel-heading">Notice Board</h2>
+                    </div>
+                    <a href="#" class="see-all-link">View all</a>
+                </header>
+                <div class="panel-main-content">
+                    <article class="announcement-item">
+                        <h3 class="announcement-heading">Important notice about Dashain Vacation</h3>
+                        <p class="announcement-summary">
+                            The Dashain vacation will be for 3 days, if you want to take leave before or after vacation ...
+                        </p>
+                    </article>
+                    <article class="announcement-item">
+                        <h3 class="announcement-heading">Important notice about Dashain Vacation</h3>
+                        <p class="announcement-summary">
+                            The Dashain vacation will be for 3 days, if you want to take leave before or after vacation ...
+                        </p>
+                    </article>
+                </div>
+            </article>
+        </section>
+
+        <section class="team-overview-module">
+            <header class="overview-top-bar">
+                <div class="overview-heading-group">
+                    <h2 class="overview-heading">My Team</h2>
+                    <span class="overview-member-count">24 members</span>
+                </div>
+                <div class="overview-status-info">
+                    <div class="current-date-display">
+                        <span class="date-today-label">Today</span>
+                        <span class="date-separator-dot">•</span>
+                        <span class="date-full-text">Fri, Aug 01</span>
+                    </div>
+                    <div class="summary-tags">
+                        <div class="summary-tag-item tag-type-alert">
+                            <img src="/img/alert.svg" alt="Alert Icon">
+                            <span class="tag-count">8</span>
+                        </div>
+                        <div class="summary-tag-item tag-type-remote">
+                            <img src="/img/Home.svg" alt="Remote Icon">
+                            <span class="tag-count">4</span>
+                        </div>
+                        <div class="summary-tag-item tag-type-office">
+                            <img src="/img/building.svg" alt="Office Icon">
+                            <span class="tag-count">2</span>
+                        </div>
+                        <div class="summary-tag-item tag-type-leave">
+                            <img src="/img/leave.svg" alt="Leave Icon">
+                            <span class="tag-count">1</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="overview-table-wrapper">
+                <table class="overview-data-table">
+                    <thead>
+                        <tr>
+                            <th class="column-heading-name" style="width: 100px;">
+                                <span>Name</span>
+                                <span class="sort-indicator">▼</span>
+                            </th>
+                            <th style="width: 50px;">Attendance</th>
+                            <th style="width: 132px;">I am their</th>
+                            <th style="width: 100px;">Allocations</th>
+                            <th style="width: 128px;">Planned Leaves</th>
+                            <th style="width: 300px;">Pending/Missing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="team-member-cell">
+                                    <img src="/img/pp photo.png" alt="Harnoop Gaire" class="team-member-avatar-img">
+                                    <div class="team-member-info">
+                                        <div class="team-member-name-text">Harnoop Gaire</div>
+                                        <div class="team-member-role-text">Software Engineer</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="/img/building.svg" alt="Office Icon">
+                            </td>
+                            <td>
+                                <div class="team-member-relation">TM</div>
+                            </td>
+                            <td>
+                                <div class="team-member-allocation-cell">
+                                    <span class="allocation-total-hours">40h</span>
+                                    <span class="stat-separator"></span>
+                                    <span class="allocation-project-list">Vyaguta, Persimmon, Product Design</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-member-leaves-info">-</div>
+                            </td>
+                            <td>
+                                <div class="team-member-pending-tasks">-</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="team-member-cell">
+                                    <img src="/img/pp photo.png" alt="Hekshith Giri" class="team-member-avatar-img">
+                                    <div class="team-member-info">
+                                        <div class="team-member-name-text">Hekshith Giri</div>
+                                        <div class="team-member-role-text">Software Engineer</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="/img/building.svg" alt="Office Icon">
+                            </td>
+                            <td>
+                                <div class="team-member-relation">TM</div>
+                            </td>
+                            <td>
+                                <div class="team-member-allocation-cell">
+                                    <span class="allocation-total-hours">40h</span>
+                                    <span class="stat-separator"></span>
+                                    <span class="allocation-project-list">Vyaguta, Persimmon, Product Design</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="leave-status-badge">
+                                    <span class="leave-days-count">1</span>
+                                    <span class="leave-status-icon">📅</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-member-pending-tasks">-</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="team-member-cell">
+                                    <img src="img/pp photo.png"Soneeya Karki class="team-member-avatar-img">
+                                    <div class="team-member-info">
+                                        <div class="team-member-name-text">Soneeya Karki</div>
+                                        <div class="team-member-role-text">Software Engineer</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="/img/building.svg" alt="Office Icon">
+                            </td>
+                            <td>
+                                <div class="team-member-relation">TM</div>
+                            </td>
+                            <td>
+                                <div class="team-member-allocation-cell">
+                                    <span class="allocation-total-hours">40h</span>
+                                    <span class="stat-separator"></span>
+                                    <span class="allocation-project-list">Vyaguta, Persimmon, Product Design</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-member-leaves-info">-</div>
+                            </td>
+                            <td>
+                                <div class="team-member-pending-tasks">-</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="team-member-cell">
+                                    <img src="img/pp photo.png" alt="Harnoop Gaire" class="team-member-avatar-img">
+                                    <div class="team-member-info">
+                                        <div class="team-member-name-text">Harnoop Gaire</div>
+                                        <div class="team-member-role-text">Software Engineer</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="img/building.svg" alt="Office Icon">
+                            </td>
+                            <td>
+                                <div class="team-member-relation">TM</div>
+                            </td>
+                            <td>
+                                <div class="team-member-allocation-cell">
+                                    <span class="allocation-total-hours">40h</span>
+                                    <span class="stat-separator"></span>
+                                    <span class="allocation-project-list">Vyaguta, Persimmon, Product Design</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="team-member-leaves-info">-</div>
+                            </td>
+                            <td>
+                                <div class="team-member-pending-tasks">-</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="worklog-module">
+            <header class="worklog-top-bar">
+                <div class="worklog-heading-group">
+                    <div class="worklog-header-icon">
+                        <img style="height:24px;" src="img/building.svg" alt="Worklog Icon">
+                    </div>
+                    <h2 class="worklog-heading">My Worklog</h2>
+                </div>
+                <div class="worklog-current-date">Friday, 12 August, 2022</div>
+            </header>
+            <form class="worklog-entry-form">
+                <div class="form-column-titles">
+                    <div class="form-column-title project-header">
+                        <span>Project/Area/Guild/Pods</span>
+                    </div>
+                    <div class="form-column-title task-header">
+                        <span>Task</span>
+                    </div>
+                    <div class="form-column-title log-header">
+                        <span>Log</span>
+                    </div>
+                    <div class="form-column-title time-column-title">
+                        <span>Time</span>
+                        <span class="time-column-total">(0h 0m)</span>
+                    </div>
+                </div>
+                <div class="form-entry-rows">
+                    <div class="form-entry-row">
+                        <div class="form-input-group input-group-project">
+                            <select class="dropdown-select">
+                                <option>Vyaguta</option>
+                                <option>Other Project</option>
+                            </select>
+                        </div>
+                        <div class="form-input-group input-group-task">
+                            <select class="dropdown-select">
+                                <option>Meetings</option>
+                                <option>Development</option>
+                                <option>Design</option>
+                            </select>
+                        </div>
+                        <div class="form-input-group input-group-log">
+                            <textarea class="textarea-input" rows="2">Sync-up with Abhash dai and Erica.</textarea>
+                            <div class="textarea-handle"></div>
+                        </div>
+                        <div class="form-input-group input-group-time">
+                            <input type="text" class="text-input time-input" value="1h 0m">
+                            <div class="row-action-buttons">
+                                <button type="button" class="row-action-button button-delete">
+                                    <img src="img/cancel.svg" alt="Delete Icon">
+                                </button>
+                                <button type="button" class="row-action-button button-duplicate">
+                                    <img src="/img/repeat.svg" alt="Duplicate Icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-entry-row form-row-empty">
+                        <div class="form-input-group input-group-project">
+                            <select class="dropdown-select is-placeholder">
+                                <option>Select Project</option>
+                            </select>
+                        </div>
+                        <div class="form-input-group input-group-task">
+                            <select class="dropdown-select is-placeholder">
+                                <option>Select Tasks</option>
+                            </select>
+                        </div>
+                        <div class="form-input-group input-group-log">
+                            <textarea class="textarea-input is-placeholder" rows="2" placeholder="Add details here"></textarea>
+                            <div class="textarea-handle"></div>
+                        </div>
+                        <div class="form-input-group input-group-time">
+                            <input type="text" class="text-input time-input is-placeholder" value="0h 0m" readonly>
+                            <div class="row-action-buttons">
+                                <button type="button" class="row-action-button button-delete">
+                                    <img src="/img/cancel.svg" alt="Delete Icon">
+                                </button>
+                                <button type="button" class="row-action-button button-duplicate is-disabled">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worklog-summary-total">
+                    <div class="summary-total-label">Total Duration:</div>
+                    <div class="summary-total-value">0h 0m</div>
+                </div>
+                <div class="worklog-form-controls">
+                    <div class="main-form-actions">
+                        <button type="button" class="button-base button-secondary-draft">Save as Draft</button>
+                        <button type="submit" class="button-base button-primary-submit">
+                            <img src="/img/submit button icon.svg" alt="Submit Icon">
+                            Submit
+                        </button>
+                    </div>
+                    <div class="auxiliary-form-actions">
+                        <button type="button" class="button-base button-tertiary-cancel">Cancel Request</button>
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
 
+    
 </body>
 </html>

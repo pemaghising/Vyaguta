@@ -184,7 +184,7 @@ a:focus-visible {
     outline-offset: 2px;
 }
 
-.events-schedule-widget {
+.events-holidays-card {
     background-color: #ffffff;
     width: 397px;
     height: 408px;
@@ -194,7 +194,7 @@ a:focus-visible {
     flex-direction: column;
 }
 
-.widget-top-bar {
+.card-header {
     background-color: #ffffff;
     height: 48px;
     border-bottom: 1px solid #e6e6e6;
@@ -202,9 +202,10 @@ a:focus-visible {
     display: flex;
     align-items: center;
     padding: 16px;
+    justify-content: space-between;
 }
 
-.widget-heading {
+.card-title {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -323,7 +324,7 @@ a:focus-visible {
     color: #b3b3b3;
 }
 
-.my-allocation-module {
+.allocation-card {
     background-color: #ffffff;
     width: 380px;
     height: 407px;
@@ -331,24 +332,6 @@ a:focus-visible {
     box-shadow: 0px 2px 2px 0px rgba(204, 197, 197, 0.25);
     display: flex;
     flex-direction: column;
-}
-
-.module-top-bar {
-    background-color: #ffffff;
-    height: 48px;
-    border-bottom: 1px solid #e6e6e6;
-    border-radius: 4px 4px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px;
-}
-
-.module-heading {
-    font-weight: 700;
-    font-size: 16px;
-    color: #333333;
-    line-height: normal;
 }
 
 .toggle-switch {
@@ -381,10 +364,10 @@ a:focus-visible {
     border-radius: 0 18px 18px 0;
 }
 
-.module-main-content {
+.card-body {
     display: flex;
     gap: 20px;
-    padding: 12px 16px;
+    padding: 52px 10px;
     align-items: center;
 }
 
@@ -689,7 +672,7 @@ a:focus-visible {
     line-height: normal;
 }
 
-.announcement-panel {
+.notice-board {
     background: linear-gradient(135deg, #2d47a6 0%, #4a7c59 100%);
     width: 355px;
     height: 408px;
@@ -699,7 +682,7 @@ a:focus-visible {
     overflow: hidden;
 }
 
-.panel-top-bar {
+.notice-board-header {
     background-color: transparent;
     height: 48px;
     border-bottom: 1px solid #e6e6e6;
@@ -710,7 +693,7 @@ a:focus-visible {
     padding: 0 16px;
 }
 
-.panel-heading-group {
+.notice-board-title-group {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -722,7 +705,7 @@ a:focus-visible {
     flex-shrink: 0;
 }
 
-.panel-heading {
+.notice-board-title {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -740,7 +723,7 @@ a:focus-visible {
     line-height: normal;
 }
 
-.panel-main-content {
+.notice-board-content {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -779,7 +762,7 @@ a:focus-visible {
     margin: 0;
 }
 
-.team-overview-module {
+.team-overview {
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px rgba(204, 197, 197, 0.25);
@@ -789,7 +772,7 @@ a:focus-visible {
     border: 1px solid #E0E0E0;
 }
 
-.overview-top-bar {
+.team-overview-header {
     background-color: #ffffff;
     border-bottom: 1px solid #e6e6e6;
     display: flex;
@@ -800,13 +783,13 @@ a:focus-visible {
     box-sizing: border-box;
 }
 
-.overview-heading-group {
+.team-overview-title-group {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.overview-heading {
+.team-overview-title {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -1063,7 +1046,7 @@ table.overview-data-table tbody tr:last-child {
     color: #AB22FF;
 }
 
-.worklog-module {
+.worklog-section {
     background-color: #ffffff;
     border-radius: 2px;
     box-shadow: 0px 5px 15px 0px rgba(145, 166, 180, 0.1);
@@ -1072,17 +1055,16 @@ table.overview-data-table tbody tr:last-child {
     width: 100%;
 }
 
-.worklog-top-bar {
+.worklog-header {
     background-color: #ffffff;
     border-bottom: 1px solid #e6e6e6;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 22px;
     height: 72px;
 }
 
-.worklog-heading-group {
+.worklog-title-group {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -1093,7 +1075,7 @@ table.overview-data-table tbody tr:last-child {
     height: 24px;
 }
 
-.worklog-heading {
+.worklog-title {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 20px;

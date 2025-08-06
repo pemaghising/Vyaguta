@@ -1480,3 +1480,22 @@ table.overview-data-table tbody tr:last-child {
 .floating-action-menu li:hover > a:not(.active) i {
     color: #0091ff;
 }
+
+.page-footer {
+    width: 1176px;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.footer-links a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #00A2E0;
+}
